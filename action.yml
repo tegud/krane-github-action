@@ -1,0 +1,16 @@
+# action.yml
+name: 'ServerlessCLI'
+description: 'Execute Krane (Kubernetes deploy) commands'
+branding:
+  icon: zap
+  color: blue
+inputs:
+  command:
+    description: 'Krane command including arguments'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
+    - ${{ inputs.args }}
