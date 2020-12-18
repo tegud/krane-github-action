@@ -1,4 +1,4 @@
-FROM tegud/docker-krane
+FROM tegud/docker-krane:1.0.0
 
 LABEL version="1.0.0" \
       repository="https://github.com/tegud/krane-github-action" \
