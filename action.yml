@@ -13,5 +13,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.command }}
-    - -f
-    - ./k3s
+    - ${{ inputs.args }}
